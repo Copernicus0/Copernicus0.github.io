@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+ <meta lang="ro">
+ <meta name="description" content="Programare web tutorial">
+ <meta name="keywords" content="HTML,CSS,Processing,JavaScript">
+<title>Programarea Web</title>
+<link href="style.css"type="text/css"rel="stylesheet">
+<link href="style2.css"type="text/css"rel="stylesheet">
+<link rel="shortcut icon" href="/images/favimg.png" type="image/x-icon" >
+<style>
+.qlink{
+text-decoration:none;
+color:white;
+font-style:italic;
+}
+.qlink:hover{
+color:lightblue;
+}
+</style>
+<script>
+function background(){
+    document.body.style.background ="url(images/matrix.gif)"
+}
+function normal(){
+	document.body.style.background="url(images/bgimg.jpg)"
+}
+</script>
+</head>
+
+<body>
+<div class="title">
+<img src="F:/Pagina atestat/Pagini/images/titlu.png"alt="Programarea Web"style="border:none;width:600px;height:73px">
+</div>
+<div class="topnav">
+<a href="F:/Pagina atestat/Pagini/home.htm">Home</a>
+<a href="F:/Pagina atestat/Pagini/html.htm">HTML</a>
+<a href="F:/Pagina atestat/Pagini/css.htm">CSS</a>
+<a href="F:/Pagina atestat/Pagini/javascript.htm">JavaScript</a>
+<a href="F:/Pagina atestat/Pagini/processing.htm">Processing</a>
+<a class="active"href="F:/Pagina atestat/Pagini/iframe.htm">More</a>
+<a href="F:/Pagina atestat/Pagini/other.htm">Other</a>
+</div>
+<hr class="t">
+<button class="button"type="button"onclick="background()">Change</button>
+<button class="button"type="button"onclick="normal()">Undo</button>
+<div class="content3">
+<p class="paragraf">Acesta este un editor text online,unde puteti începe să învațați bazele programarii web.</p>
+<p class="paragraf">Pagina este pusă într-un cadru(inline frame sau iframe),și am facut legatură între cele două cu eticheta &ltiframe&gt</p>
+<p class="paragraf">Aici aveti un link cu pagina originală:</p>
+<a class="qlink" href="http://htmlcodeeditor.com/"target="_blank">http://htmlcodeeditor.com/</a>
+</div>
+    <a href="http://htmlcodeeditor.com/" target="myIframe"></a>
+    <iframe style="width:1300px;height:500px" src="http://htmlcodeeditor.com/" name = "myIframe"></iframe>
+	
+</body>
+</html>
